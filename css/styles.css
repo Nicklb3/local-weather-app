@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-one: #00383e;
+    --color-two: #bceae6;
+    --color-three: #fed1a5;
+    --color-four: #cc5075;
+    --color-five: #091b4b;
+
+}
+
+.header {
+    color: #fff;
+    background-color: var(--color-one);
+    text-align: center;
+    padding: calc(1.7vw + 1.3vh);
+}
+
+.header-heading {
+    font-size: calc(2.7vw + 2.2vh);
+}
+
