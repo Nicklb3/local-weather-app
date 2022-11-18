@@ -13,7 +13,10 @@
     --color-three: #fed1a5;
     --color-four: #cc5075;
     --color-five: #091b4b;
+}
 
+body {
+    font-family: 'Comfortaa', cursive;
 }
 
 .header {
@@ -25,5 +28,6 @@
 
 .header-heading {
     font-size: calc(2.7vw + 2.2vh);
+    font-weight: 700;
 }
 
