@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- tailwind script tag -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- google fonts ling -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -14,12 +12,93 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Local Weather City App</title>
 </head>
+
 <body>
     <header class="header">
-        <h1 class="header-heading">Weather Dashboard</h1>
+        <h1 class="header-title">Weather Dashboard</h1>
     </header>
-   
-    <!-- javaScript link -->
+    <main class="main">
+        <aside class="aside">
+            <!-- <form action="" class="flex">
+                <input type="text" placeholder="Enter city name" class="border-2 border-stone-500 p-5 m-6 rounded">
+                <button type="submit" class="border-2 border-sky-500 p-5 m-6 rounded text-white bg-sky-500">Search</button>
+            </form> -->
+    
+            <form action="" class="aside-form">
+                <input type="text" class="city-input" placeholder="Enter city name">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+            
+            <div class="aside-info">
+                <ul>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                    <li class="aside-list">Lorem</li>
+                </ul>
+            </div>
+        </aside>
+    
+        <section class="weather-info">
+    
+            <section class="city-info">
+                <h2>Atlanta</h2>
+                <p id="currentDay" class="lead"></p>
+                <p>Temp:</p>
+                <p>Wind:</p>
+                <p>Humidity:</p>
+            </section>
+    
+            <section class="forecast-info">
+                <h2 class="forecast-info-title">5-Day Forecast:</h2>
+
+                <div class="forecast-info-cards">
+                    <div class="card-1 cards">
+                        <p class="next-day-1"></p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+
+                    <div class="card-2 cards">
+                        <p class="next-day-2"></p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+
+                    <div class="card-3 cards">
+                        <p class="next-day-3"></p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+
+                    <div class="card-4 cards">
+                        <p class="next-day-4"></p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+
+                    <div class="card-5 cards">
+                        <p class="next-day-5"></p>
+                        <p>Temp:</p>
+                        <p>Wind:</p>
+                        <p>Humidity:</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </main>   
+    <!-- dayjs script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!-- javaScript script tag-->
     <script src="./js/script.js"></script>
 </body>
 </html>
