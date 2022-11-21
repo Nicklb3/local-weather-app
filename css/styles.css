@@ -77,8 +77,18 @@ body {
     padding: 2rem;
 }
 
+.city-info {
+    border: 0.2rem var(--color-two) solid;
+    border-radius: 0.5rem;
+    padding: 1.5rem 4rem 2.5rem;
+}
+
+.city-info-title {
+    font-size: calc(1.7vw + 1.2vh);
+}
+
 .forecast-info {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .forecast-info-cards {
