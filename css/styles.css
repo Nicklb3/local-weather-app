@@ -65,6 +65,7 @@ body {
 .aside-list {
     list-style: none;
     background-color: var(--color-three);
+    margin-top: 2rem;
 }
 
 .main {
