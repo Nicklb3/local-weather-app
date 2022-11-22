@@ -37,7 +37,7 @@ body {
 
 .city-input {
     display: block;
-    padding: 0.3rem 0.2rem;
+    padding: 0.6rem 0.2rem;
     margin-bottom: 1rem;
     outline: none;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .search-btn:hover {
-    background-color: #cc5075e2;
+    background-color: #cc5075d8;
 }
 
 .search-btn,
@@ -77,18 +77,28 @@ body {
     padding: 2rem;
 }
 
-.city-info {
+.current-city-info {
     border: 0.2rem var(--color-two) solid;
     border-radius: 0.5rem;
-    padding: 1.5rem 4rem 2.5rem;
+    padding: 1.5rem 4rem 2rem;
 }
 
-.city-info-title {
+.current-city-info-title {
     font-size: calc(1.7vw + 1.2vh);
+    margin-bottom: 1.3rem;
+}
+
+.current-city-info p {
+    margin-bottom: 1rem;
+    font-size: calc(0.8rem + 0.8rem);
 }
 
 .forecast-info {
     margin-top: 1.5rem;
+}
+
+.forecast-info-title {
+    font-size: calc(1.2vw + 1.2vh);
 }
 
 .forecast-info-cards {
@@ -101,6 +111,12 @@ body {
     margin: 2rem 2rem 0 0;
     color: white;
     background-color: var(--color-five);
+    font-size: calc(0.7vw + 0.7vh);
+    padding: 0.7rem;
+}
+
+.cards p {
+    margin-bottom: 0.5rem;
 }
 
 
