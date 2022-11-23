@@ -14,10 +14,17 @@
 </head>
 
 <body>
+
+    <!-- heade container -->
     <header class="header">
+        <!-- headder title -->
         <h1 class="header-title">Weather Dashboard</h1>
     </header>
+
+    <!-- main container/ container all code outside of the header -->
     <main class="main">
+
+        <!-- -->
         <aside class="aside">
             
             <!-- <form action="" class="flex">
@@ -25,13 +32,17 @@
                 <button type="submit" class="border-2 border-sky-500 p-5 m-6 rounded text-white bg-sky-500">Search</button>
             </form> -->
     
+            <!-- form container/ includes input - search button / and search history container -->
             <form action="" class="aside-form">
                 <input type="text" class="city-input" placeholder="Enter city name">
                 <button type="submit" class="search-btn">Search</button>
             </form>
             
-            <div class="aside-info">
-                <ul>
+            <!-- seacher history container -->
+            <div class="search-history">
+
+
+                <!-- <ul>
                     <li class="aside-list list-1">Lorem</li>
                     <li class="aside-list list-2">Lorem</li>
                     <li class="aside-list list-3">Lorem</li>
@@ -40,25 +51,30 @@
                     <li class="aside-list list-6">Lorem</li>
                     <li class="aside-list list-7">Lorem</li>
                     <li class="aside-list list-8">Lorem</li>
-                </ul>
+                </ul> -->   
             </div>
         </aside>
     
+        <!-- current weather container/ all content that pop up from search -->
         <section class="current-weather-info">
     
             <section class="current-city-info">
-                <h2 class="current-city-info-title">Atlanta</h2>
-                <p id="currentDay" class="current-city-day"></p>
-                <p class="current-city-info-temp">Temp:</p>
-                <p class="current-city-info-wind">Wind:</p>
-                <p class="current-city-info-humidity">Humidity:</p>
+                <h2 class="current-city-info-title"></h2>
+
+                <ul>
+                    <li class="current-city-day" id="currentDay"></li>
+                    <li class="current-city-info-temp"></li>
+                    <li class="current-city-info-wind"></li>
+                    <li class="current-city-info-humidity"></li>
+                </ul>
             </section>
     
+            <!-- forecast container/ all cards containers -->
             <section class="forecast-info">
                 <h2 class="forecast-info-title">5-Day Forecast:</h2>
 
                 <div class="forecast-info-cards">
-                    <div class="card-1 cards">
+                    <!-- <div class="card-1 cards">
                         <p class="day-1"></p>
                         <p>Temp:</p>
                         <p>Wind:</p>
@@ -91,16 +107,13 @@
                         <p>Temp:</p>
                         <p>Wind:</p>
                         <p>Humidity:</p>
-                    </div>
+                    </div> -->
 
                 </div>
             </section>
         </section>
     </main>   
     <!-- dayjs script tag -->
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <!-- javaScript script tag-->
     <script src="./js/script.js"></script>

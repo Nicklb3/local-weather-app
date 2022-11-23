@@ -70,6 +70,7 @@ body {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
@@ -81,6 +82,10 @@ body {
     border: 0.2rem var(--color-two) solid;
     border-radius: 0.5rem;
     padding: 1.5rem 4rem 2rem;
+}
+
+.current-city-info ul li {
+    list-style: none;
 }
 
 .current-city-info-title {
@@ -103,6 +108,8 @@ body {
 
 .forecast-info-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards {
@@ -113,6 +120,7 @@ body {
     background-color: var(--color-five);
     font-size: calc(0.7vw + 0.7vh);
     padding: 0.7rem;
+    border-radius: 0.5rem;
 }
 
 .cards p {
