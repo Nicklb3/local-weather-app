@@ -32,7 +32,13 @@ body {
 }
 
 .aside {
-    padding: 3rem;
+    padding: 0.5rem 3rem 1rem;
+}
+
+label {
+    font-size: calc(0.7vw + 0.7vh);
+    font-weight: 900;
+    line-height: 2;
 }
 
 .city-input {
