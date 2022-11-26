@@ -73,6 +73,16 @@ let cityResults = function (searchTerm) {
               'http://openweathermap.org/img/wn/' +
               todayWeather.weather[0].icon +
               '@2x.png';
+
+            let iconElm = document.createElement('img');
+
+            iconElm.setAttribute('src', iconUrl);
+            currentCityEl.append(iconElm);
+            currentTempEl.textContent = 'Temp: ' + temp;
+            currentWindEl.textContent = 'Wind: ' + wind;
+            currentHumidityEl.textContent = 'Humidity: ' + humidity;
+
+            document.querySelector('.forecast-info-cards').innerHTML = '';
         })
 
     });
