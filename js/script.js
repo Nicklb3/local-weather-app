@@ -2,7 +2,7 @@
 const cityInputEl = document.querySelector('.city-input');
 const searchBtnEl = document.querySelector('.seacrh-btn');
 const searchHistoryCon = document.querySelector('.search-history');
-// const currentCityInfoEl = document.querySelector('.current-weather-info');
+// const currentCityInfoEl = document.querySelector('#current-info');
 const currentCityEl = document.querySelector('#current-city');
 const currentDayEl = document.querySelector('#current-day');
 const currentTempEl = document.querySelector('#current-temp');
@@ -22,6 +22,16 @@ let formSubmitHander = function (event) {
         currentCityEl.textContent = '';
         alert ('Please enter a City');
     }
+};
 
+let cityResults = function (searchTerm) {
+    let userSearch = searchTerm || cityInputEl.value;
+
+    let weatherCoordsApi = 'https://api.openweathermap.org/geo/1.0/direct';
+  weatherCoordsApi =
+    weatherCoordsApi +
+    '?q=' +
+    userSearch +
+    '&limit=&appid=f3dd875ac81e50aaada068245357b0ee';
 };
 
