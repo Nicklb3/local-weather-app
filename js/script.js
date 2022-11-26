@@ -33,5 +33,30 @@ let cityResults = function (searchTerm) {
     '?q=' +
     userSearch +
     '&limit=&appid=f3dd875ac81e50aaada068245357b0ee';
+
+    fetch(weatherCoordsApi)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (response) {
+        let city = response[0];
+        let cityName = city.name;
+        let latitude = city.lat;
+        let longitude = city.lon;
+
+        const key = 'f3dd875ac81e50aaada068245357b0ee&units=imperial';
+
+        let weatherForecastApi =
+        'https://api.openweathermap.org/data/2.5/forecast';
+      weatherForecastApi =
+        weatherForecastApi +
+        '?lat=' +
+        latitude +
+        '&lon=' +
+        longitude +
+        '&appid=' +
+        key;
+
+    });
 };
 
