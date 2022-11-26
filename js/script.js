@@ -46,16 +46,34 @@ let cityResults = function (searchTerm) {
 
         const key = 'f3dd875ac81e50aaada068245357b0ee&units=imperial';
 
-        let weatherForecastApi =
-        'https://api.openweathermap.org/data/2.5/forecast';
-      weatherForecastApi =
-        weatherForecastApi +
+        let weatherForecastApi = 'https://api.openweathermap.org/data/2.5/forecast';
+
+        weatherForecastApi = weatherForecastApi +
         '?lat=' +
         latitude +
         '&lon=' +
         longitude +
         '&appid=' +
         key;
+
+        const todayDate = dayjs().format('MM/DD/YYYY');
+
+        currentCityEl.textContent = cityName + ' ' + todayDate;
+
+        fetch(weatherForecastApi)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (response) {
+            let todayWeather = response.list[0];
+            let temp = todayWeather.main.temp;
+            let humidity = todayWeather.main.humidity;
+            let wind = todayWeather.wind.speed;
+            let iconUrl =
+              'http://openweathermap.org/img/wn/' +
+              todayWeather.weather[0].icon +
+              '@2x.png';
+        })
 
     });
 };
