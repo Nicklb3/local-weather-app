@@ -9,7 +9,7 @@ const currentTempEl = document.querySelector('#current-temp');
 const currentWindEl = document.querySelector('#current-wind');
 const currentHumidityEl = document.querySelector('#current-himidity');
 
-let formSubmitHander = function (event) {
+let formSubmitHandler = function (event) {
     event.preventDefault();
 
     let cityInput = cityInputEl.value.trim();
@@ -28,8 +28,8 @@ let cityResults = function (searchTerm) {
     let userSearch = searchTerm || cityInputEl.value;
 
     let weatherCoordsApi = 'https://api.openweathermap.org/geo/1.0/direct';
-  weatherCoordsApi =
-    weatherCoordsApi +
+
+    weatherCoordsApi = weatherCoordsApi +
     '?q=' +
     userSearch +
     '&limit=&appid=f3dd875ac81e50aaada068245357b0ee';
@@ -83,7 +83,17 @@ let cityResults = function (searchTerm) {
             currentHumidityEl.textContent = 'Humidity: ' + humidity;
 
             document.querySelector('.forecast-info-cards').innerHTML = '';
-        })
+
+            for (let i = 5; i < response.list.length; i += 7) {
+                const forecastDates = new Date(response.list[i].dt * 1000);
+
+                const forecastDay = forecastDates.getDate();
+                const forecastMonth = forecastDates.getMonth();
+                const forecastYear = forecastDates.getFullYear();
+            }
+
+            
+        });
 
     });
 };
