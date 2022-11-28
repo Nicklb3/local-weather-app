@@ -90,6 +90,12 @@ let cityResults = function (searchTerm) {
                 const forecastDay = forecastDates.getDate();
                 const forecastMonth = forecastDates.getMonth();
                 const forecastYear = forecastDates.getFullYear();
+
+                let divCard = document.createElement('div');
+                divCard.setAttribute('class', `cards`);
+
+                let forecastDateElm = document.createElement('h3');
+                forecastDateElm.setAttribute ('class', `day`);
             }
 
             

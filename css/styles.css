@@ -124,13 +124,14 @@ label {
     margin: 2rem 2rem 0 0;
     color: white;
     background-color: var(--color-five);
-    font-size: calc(0.7vw + 0.7vh);
+    font-size: calc(0.8vw + 0.8vh);
     padding: 0.7rem;
     border-radius: 0.5rem;
 }
 
-.cards p {
+.day {
     margin-bottom: 0.5rem;
+    font-size: calc(1vw + 1vh);
 }
 
 
